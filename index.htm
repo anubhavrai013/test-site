@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Make calculation." />
+    <meta property="og:title" content="Calculator" />
+    <meta property="og:description" content="Make calculation." />
+    <meta property="og:site_name" content="Calculator" />
+    <link rel="stylesheet" href="css\main.css" />
+    <script src="js\classListAPI.js"></script>
+    <script src="js\lethargy.js"></script>
+  </head>
+  <body>
+    <section class="mainWrapper">
+      <header></header>
+
+      <section id="plan">
+        <h1>SELECT TIME</h1>
+        <section class="timeWrapper" ontouchstart>
+          <div class="highlightTime"></div>
+          <div class="setTime">
+            <div class="settingsWrapper">
+              <ul class="settings">
+                <li class="notChosen">8</li>
+                <li class="notChosen">9</li>
+                <li class="notChosen">10</li>
+                <li class="notChosen">11</li>
+                <li class="notChosen">12</li>
+                <li class="notChosen">1</li>
+                <li class="notChosen">2</li>
+                <li class="notChosen">3</li>
+                <li class="notChosen">4</li>
+                <li class="notChosen">5</li>
+                <li class="notChosen">6</li>
+                <li class="notChosen">7</li>
+                <li class="chosen">8</li>
+                <li class="notChosen">9</li>
+                <li class="notChosen">10</li>
+                <li class="notChosen">11</li>
+                <li class="notChosen">12</li>
+                <li class="notChosen">1</li>
+                <li class="notChosen">2</li>
+                <li class="notChosen">3</li>
+                <li class="notChosen">4</li>
+                <li class="notChosen">5</li>
+                <li class="notChosen">6</li>
+                <li class="notChosen">7</li>
+                <li class="notChosen">8</li>
+              </ul>
+            </div>
+            <div class="settingsWrapper">
+              <ul class="settings">
+                <li class="notChosen">00</li>
+                <li class="notChosen">05</li>
+                <li class="notChosen">10</li>
+                <li class="notChosen">15</li>
+                <li class="notChosen">20</li>
+                <li class="notChosen">25</li>
+                <li class="notChosen">30</li>
+                <li class="notChosen">35</li>
+                <li class="notChosen">40</li>
+                <li class="notChosen">45</li>
+                <li class="notChosen">50</li>
+                <li class="notChosen">55</li>
+                <li class="chosen">00</li>
+                <li class="notChosen">05</li>
+                <li class="notChosen">10</li>
+                <li class="notChosen">15</li>
+                <li class="notChosen">20</li>
+                <li class="notChosen">25</li>
+                <li class="notChosen">30</li>
+                <li class="notChosen">35</li>
+                <li class="notChosen">40</li>
+                <li class="notChosen">45</li>
+                <li class="notChosen">50</li>
+                <li class="notChosen">55</li>
+                <li class="notChosen">00</li>
+              </ul>
+            </div>
+            <div class="settingsWrapper">
+              <ul class="settings">
+                <li class="notChosen"></li>
+                <li class="notChosen"></li>
+                <li class="notChosen"></li>
+                <li class="notChosen"></li>
+                <li class="notChosen"></li>
+                <li class="notChosen"></li>
+                <li class="notChosen"></li>
+                <li class="notChosen"></li>
+                <li class="notChosen"></li>
+                <li class="notChosen"></li>
+                <li class="notChosen"></li>
+                <li class="notChosen"></li>
+                <li class="chosen">AM</li>
+                <li class="notChosen">PM</li>
+                <li class="notChosen"></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div id="bedTime">
+          <span></span>
+          <p>SHOW RESULTS 1</p>
+        </div>
+        <p class="mode">QUICK CALCULATION</p>
+        <div id="getUpTime">
+          <span></span>
+          <p>SHOW RESULTS 2</p>
+        </div>
+      </section>
+      <section id="getUp" class="caclResult">
+        <h1>RESULT 2</h1>
+        <p class="desc"></p>
+        <ul class="instructions">
+          <li class="wakeUpTime">10:45 PM</li>
+          <li class="wakeUpTime">12:15 AM</li>
+          <li class="wakeUpTime">1:45 AM</li>
+          <li class="wakeUpTime">3:15 AM</li>
+          <li class="wakeUpTime prior">4:45 AM</li>
+          <li class="wakeUpTime prior">6:15 AM</li>
+        </ul>
+        <p class="desc"></p>
+        <p class="calcAgain">Calculate again</p>
+      </section>
+      <section id="goToBed" class="caclResult">
+        <h1>RESULT 1</h1>
+        <p class="desc">
+          <br />
+          <span id="wakeUpTime"></span>
+        </p>
+        <ul class="instructions">
+          <li class="goToBedTime prior">10:45 PM</li>
+          <li class="goToBedTime prior">12:15 AM</li>
+          <li class="goToBedTime">1:45 AM</li>
+          <li class="goToBedTime">3:15 AM</li>
+          <li class="goToBedTime">4:45 AM</li>
+          <li class="goToBedTime">6:15 AM</li>
+        </ul>
+        <p class="desc"></p>
+        <p class="calcAgain">Calculate again</p>
+      </section>
+      <section id="animation">
+        <span id="sun"></span>
+        <span id="stars">
+          <span id="moon"></span>
+        </span>
+      </section>
+    </section>
+
+    <script src="js\main.js"></script>
+    <script src="js\mouseWheel.js"></script>
+  </body>
+</html>
